@@ -1,0 +1,79 @@
+
+
+<!-- La letra "e" es convertida para "enter"
+La letra "i" es convertida para "imes"
+La letra "a" es convertida para "ai"
+La letra "o" es convertida para "ober"
+La letra "u" es convertida para "ufat" -->
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <title>Encriptador</title>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="estilos/reset.css">    
+        <link rel="stylesheet" href="estilos/styles.css">        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script type ="text/javascript" src="js/script.js"> </script>
+    </head>
+
+    <body>  
+        <header>
+            <img class="logo" src="imagenes/Vector.png" alt="logo-alura" >
+        </header>
+<main>         
+    
+    
+        <div>
+            <center><button type ="button" class="copiar" id="botonCopiar">Copiar</button></center>
+        </div>
+
+
+
+
+        <section>
+            <textarea name="resultado" class="mensaje" id="textoDesencriptado" cols="20" rows="10"></textarea>
+        </section>
+
+
+
+
+
+
+        <section class="dos">
+
+            <input type="text" id ="TextEncriptado" class="texto-ing" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <h6 class="dato">Solo letras minúsculas</h6>
+
+            <button type="button" value="Encriptar" class="encrip"  id="botonEncripta">Encriptar</button>
+            <button  value="Desencriptar" class="des"   id="botonDesencripta">Desencriptar</button>
+        </section>  
+
+</main>   
+
+    </body>
+    <script>
+        var boton = document.querySelector ("#botonEncripta");
+        boton.onclick = encriptar;
+        var botonD = document.querySelector("#botonDesencripta")
+        botonD.onclick = desencriptar;
+        var copiar = document.querySelector("#botonCopiar");
+        copiar.onclick = Copia;
+    </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
